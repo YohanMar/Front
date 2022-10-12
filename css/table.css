@@ -1,0 +1,24 @@
+tbody tr
+{
+  background: #f8d6a9; 
+}
+tbody tr:nth-child(even)
+{
+  background: #fccb8b; 
+}
+tbody tr:hover
+{
+  background: #f7cc59; 
+}
+tbody th
+{
+  border: 1px solid white;
+  background: #fa802e; 
+}
+table, th, td {
+  border: 1px solid white;
+  }
+
+p.description{
+  font-size: 12px;
+}
