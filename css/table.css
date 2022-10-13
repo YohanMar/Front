@@ -22,3 +22,6 @@ table, th, td {
 p.description{
   font-size: 12px;
 }
+table{
+  background-color: rgb(255, 255, 255);
+}

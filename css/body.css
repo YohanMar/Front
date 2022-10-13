@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+} 
+body {
+    background-image: url('../images/1083985.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+h1, h2{
+    text-align: center;
+}
+.container{
+    background-color: white;
+    padding-bottom: 5%;
+}
+.nom_page{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 20%;
+    margin-bottom: 8%;
+    box-shadow: rgb(38, 57, 77) 0px -20px 30px -10px;
+    background-color: rgb(255, 255, 255);
+}

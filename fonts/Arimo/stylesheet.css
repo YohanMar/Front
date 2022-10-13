@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Arimo';
+    src: url('Arimo-Regular.woff2') format('woff2'),
+        url('Arimo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
