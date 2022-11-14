@@ -26,6 +26,5 @@ function createTable() {
 
   document.body.append(table);
 }
-createTable();
 
   

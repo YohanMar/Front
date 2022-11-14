@@ -1,5 +1,5 @@
 h1{
-    font-family: 'secular_oneregular', Arial, sans-serif;
+  font-family: 'secular_oneregular', Arial, sans-serif;
     font-weight:normal;
     font-style:normal;
 
@@ -9,7 +9,7 @@ h1{
     font-size: 20em;
 }
 
-h2{
+h2 , .titre{
     font-family: 'Arimo-Regular', Arial, sans-serif;
     font-weight:normal;
     font-style:normal;
