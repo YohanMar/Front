@@ -4,6 +4,7 @@ function afficheMenu(){
         main.innerHTML = '<div class="navbar">'+ 
         '<a href="#"  onclick="afficheAccueil();" class="active">Accueil</a>'+
         '<div class="dropdown">'+
+
           '<button class="dropbtn">Espace Personnel<i class="fa fa-caret-down"></i>'+
           '</button>'+
           '<div class="dropdown-content">'+
@@ -13,6 +14,7 @@ function afficheMenu(){
             '<a href="#">Historique</a>'+
           '</div>'+
         '</div>'+
+
         '<a href="#" onclick="createTable(); ">Animaux</a>'+
         '<a href="#" onclick="afficheVisiteAudio();">Visite Audio</a>'+
         '<a href="#" onclick="afficheVisiteVideo();">Visite Vidéo</a>'+

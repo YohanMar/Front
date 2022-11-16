@@ -6,25 +6,28 @@ const animal4 = new Animal("images/ourspol", "Ours polaire", "L'ours blanc (Ursu
 var animaux = [animal1, animal2, animal3, animal4]
 
 function createTable() {
+  if(document.getElementsByTagName("table").length == 0){
+    var headers = ["Image", "Nom", "Description", "Pays Natal"];
+    var table = document.createElement("table");  //makes a table element for the page
 
-  var headers = ["Image", "Nom", "Description", "Pays Natal"];
-  var table = document.createElement("TABLE");  //makes a table element for the page
-      
-  for(var i = 0; i < animaux.length; i++) {
-      var row = table.insertRow(i);
-      row.insertCell(0).innerHTML = "<img src='"+animaux[i].urlImage+".jpg'>"
-      row.insertCell(1).innerHTML = animaux[i].nom;
-      row.insertCell(2).innerHTML = animaux[i].description;
-      row.insertCell(3).innerHTML = animaux[i].paysNatal;
+    for(var i = 0; i < animaux.length; i++) {
+        var row = table.insertRow(i);
+        row.insertCell(0).innerHTML = "<img src='"+animaux[i].urlImage+".jpg'>"
+        row.insertCell(1).innerHTML = animaux[i].nom;
+        row.insertCell(2).innerHTML = animaux[i].description;
+        row.insertCell(3).innerHTML = animaux[i].paysNatal;
+    }
+  
+    var header = table.createTHead();
+    var headerRow = header.insertRow(0);
+    for(var i = 0; i < headers.length; i++) {
+        headerRow.insertCell(i).innerHTML = headers[i];
+    }
+    document.body.append(table);
+  }else{
+
   }
 
-  var header = table.createTHead();
-  var headerRow = header.insertRow(0);
-  for(var i = 0; i < headers.length; i++) {
-      headerRow.insertCell(i).innerHTML = headers[i];
-  }
-
-  document.body.append(table);
 }
 
   
