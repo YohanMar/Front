@@ -5,6 +5,8 @@ const animal4 = new Animal("images/ourspol", "Ours polaire", "L'ours blanc (Ursu
 
 var animaux = [animal1, animal2, animal3, animal4]
 
+
+//fonction de création du tableau d'animaux
 function createTable() {
   if(document.getElementsByTagName("table").length == 0){
     var headers = ["Image", "Nom", "Description", "Pays Natal"];
@@ -24,9 +26,58 @@ function createTable() {
         headerRow.insertCell(i).innerHTML = headers[i];
     }
     document.body.append(table);
-  }else{
-
   }
+
+  //Affichage du formulaire
+  var btnForm = document.createElement("BUTTON");
+  document.body.append(btnForm);
+  btnForm.innerHTML = "Afficher formulaire d'ajout de l'Animal";
+
+  var f = document.createElement("FORM")
+  document.body.appendChild(f);
+  f.style.visibility="hidden";
+
+  btnForm.onclick = function(){
+    if(f.style.visibility === "hidden"){
+      f.style.visibility = "visible";
+      btnForm.innerHTML = "Cacher le formulaire d'ajout de l'Animal";
+    }else{
+      f.style.visibility = "hidden";
+      btnForm.innerHTML = "Afficher le formulaire d'ajout de l'Animal";
+    }
+  };
+
+
+
+
+      // Textes et input du formulaire
+      let textAnimaux = document.createTextNode("Image :"); 
+      f.appendChild(textAnimaux);
+
+      var inputImage = document.createElement("INPUT");
+      inputImage.setAttribute("type", "password");
+      f.appendChild(inputImage);
+
+      let textNom = document.createTextNode("Nom :"); 
+      f.appendChild(textNom);
+
+      var inputNom = document.createElement("INPUT");
+      inputNom.setAttribute("type", "password");
+      f.appendChild(inputNom);
+
+      let textDescription = document.createTextNode("Description :"); 
+      f.appendChild(textDescription);
+
+      var inputDescription = document.createElement("INPUT");
+      inputDescription.setAttribute("type", "password");
+      f.appendChild(inputDescription);
+
+      let textPaysNatal = document.createTextNode("Pays Natal :"); 
+      f.appendChild(textPaysNatal);
+
+      var inputPaysNatal = document.createElement("INPUT");
+      inputPaysNatal.setAttribute("type", "password");
+      f.appendChild(inputPaysNatal);
 
 }
 
